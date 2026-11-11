@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AccessHire | Accessible Job Portal</title>
+
+    <meta name="description" content="An AI-powered accessible job portal connecting candidates with inclusive career opportunities.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-universal-access"></i>
+            <span>Access<span class="logo-highlight">Hire</span></span>
+        </div>
+
+        <div class="sidebar-label">MENU</div>
+
+        <nav class="sidebar-nav">
+
+            <a href="#home" class="nav-link active" data-page="home">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#dashboard" class="nav-link" data-page="dashboard">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="#jobs" class="nav-link" data-page="jobs">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Explore Jobs</span>
+            </a>
+
+            <a href="#about" class="nav-link" data-page="about">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>About Us</span>
+            </a>
+
+            <a href="#how-it-works" class="nav-link" data-page="how-it-works">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>How It Works</span>
+            </a>
+
+            <a href="#accessibility" class="nav-link" data-page="accessibility">
+                <i class="fa-solid fa-universal-access"></i>
+                <span>Accessibility</span>
+            </a>
+
+            <a href="#contact" class="nav-link" data-page="contact">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact Us</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-label account-label">ACCOUNT</div>
+
+        <nav class="sidebar-nav">
+
+            <a href="#login" class="nav-link" data-page="login">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Login</span>
+            </a>
+
+            <a href="#register" class="nav-link" data-page="register">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Register</span>
+            </a>
+
+            <a href="#employer-dashboard" class="nav-link" data-page="employer-dashboard">
+                <i class="fa-solid fa-building"></i>
+                <span>Employer Panel</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="sidebar-help">
+                <i class="fa-solid fa-headset"></i>
+                <h4>Need Help?</h4>
+                <p>We are here to support your career journey.</p>
+                <a href="#contact" data-page="contact">Get Support</a>
+            </div>
+
+            <a href="#home" class="nav-link logout-link" data-action="logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Log Out</span>
+            </a>
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+        <!-- TOP HEADER -->
+
+        <header class="topbar">
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="top-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="globalSearch"
+                placeholder="Search jobs, companies, skills...">
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="icon-button" data-page="accessibility"
+                aria-label="Accessibility settings" title="Accessibility">
+                    <i class="fa-solid fa-universal-access"></i>
+                </button>
+
+                <button class="icon-button" id="notificationButton" aria-label="Notifications"
+                title="Notifications">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="profile-menu">
+                    <img src="https://i.pravatar.cc/100?img=12" alt="User profile">
+                    <div>
+                        <strong>Welcome Guest</strong>
+                        <small>Candidate Account</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= HOME PAGE ================= -->
+
+        <section class="page-section active-page" id="home">
+
+            <div class="hero-section">
+
+                <div class="hero-content">
+
+                    <span class="section-tag">
+                        <i class="fa-solid fa-star"></i>
+                        Inclusive Career Opportunities
+                    </span>
+
+                    <h1>
+                        Your Talent Deserves
+                        <span>Equal Opportunities.</span>
+                    </h1>
+
+                    <p>
+                        Discover meaningful career opportunities with
+                        an accessible job platform designed to connect
+                        talented people with inclusive employers.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="primary-btn" data-page="jobs">
+                            Explore Jobs
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                        <button class="secondary-btn" data-page="about">
+                            Learn More
+                        </button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <h3>500+</h3>
+                            <p>Job Opportunities</p>
+                        </div>
+
+                        <div>
+                            <h3>200+</h3>
+                            <p>Inclusive Companies</p>
+                        </div>
+
+                        <div>
+                            <h3>1000+</h3>
+                            <p>Active Candidates</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                    <img
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900"
+                    alt="Diverse professionals working together">
+                </div>
+
+            </div>
+
+
+            <!-- HOME SEARCH -->
+
+            <div class="home-search-section">
+
+                <div class="search-heading">
+                    <h2>Find Your Dream Job</h2>
+                    <p>Search opportunities that match your skills and interests.</p>
+                </div>
+
+                <div class="job-search-box">
+
+                    <div class="search-field">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="homeJobSearch"
+                        placeholder="Job title or keywords">
+                    </div>
+
+                    <div class="search-field">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" id="homeLocation"
+                        placeholder="Location">
+                    </div>
+
+                    <button class="primary-btn" id="homeSearchBtn">
+                        Search Jobs
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEATURE SECTION -->
+
+            <div class="content-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">WHY ACCESSHIRE?</span>
+                        <h2>Designed for Everyone</h2>
+                        <p>Technology that makes career opportunities more accessible.</p>
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon blue-icon">
+                            <i class="fa-solid fa-universal-access"></i>
+                        </div>
+                        <h3>Accessible Platform</h3>
+                        <p>
+                            An easy-to-use interface with accessibility
+                            features for different user needs.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon orange-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>Smart Job Matching</h3>
+                        <p>
+                            Discover relevant jobs based on your skills,
+                            interests and profile.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon green-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3>Inclusive Employers</h3>
+                        <p>
+                            Connect with organizations that value
+                            diverse talent and equal opportunities.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon purple-icon">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h3>Simple Experience</h3>
+                        <p>
+                            Easy navigation and a user-friendly
+                            job application process.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEATURED JOBS -->
+
+            <div class="content-section">
+
+                <div class="section-heading heading-with-link">
+                    <div>
+                        <span class="section-tag">CAREER OPPORTUNITIES</span>
+                        <h2>Featured Jobs</h2>
+                        <p>Explore some of the latest opportunities.</p>
+                    </div>
+
+                    <button class="text-link" data-page="jobs">
+                        View All Jobs <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="job-grid">
+
+                    <article class="job-card">
+                        <div class="job-card-top">
+                            <div class="company-logo google-logo">G</div>
+                            <button class="save-job" aria-label="Save job">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                        </div>
+
+                        <span class="job-category">Technology</span>
+                        <h3>Frontend Developer</h3>
+                        <p class="company-name">Google</p>
+
+                        <div class="job-details">
+                            <span><i class="fa-solid fa-location-dot"></i> Remote</span>
+                            <span><i class="fa-solid fa-clock"></i> Full Time</span>
+                        </div>
+
+                        <div class="job-card-bottom">
+                            <strong>₹5 - 8 LPA</strong>
+                            <button class="small-btn" data-page="jobs">View Job</button>
+                        </div>
+                    </article>
+
+
+                    <article class="job-card">
+                        <div class="job-card-top">
+                            <div class="company-logo microsoft-logo">M</div>
+                            <button class="save-job" aria-label="Save job">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                        </div>
+
+                        <span class="job-category">Software</span>
+                        <h3>Software Engineer</h3>
+                        <p class="company-name">Microsoft</p>
+
+                        <div class="job-details">
+                            <span><i class="fa-solid fa-location-dot"></i> Hybrid</span>
+                            <span><i class="fa-solid fa-clock"></i> Full Time</span>
+                        </div>
+
+                        <div class="job-card-bottom">
+                            <strong>₹6 - 10 LPA</strong>
+                            <button class="small-btn" data-page="jobs">View Job</button>
+                        </div>
+                    </article>
+
+
+                    <article class="job-card">
+                        <div class="job-card-top">
+                            <div class="company-logo amazon-logo">a</div>
+                            <button class="save-job" aria-label="Save job">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                        </div>
+
+                        <span class="job-category">Design</span>
+                        <h3>UI/UX Designer</h3>
+                        <p class="company-name">Amazon</p>
+
+                        <div class="job-details">
+                            <span><i class="fa-solid fa-location-dot"></i> On-site</span>
+                            <span><i class="fa-solid fa-clock"></i> Full Time</span>
+                        </div>
+
+                        <div class="job-card-bottom">
+                            <strong>₹4 - 7 LPA</strong>
+                            <button class="small-btn" data-page="jobs">View Job</button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- CALL TO ACTION -->
+
+            <div class="cta-section">
+                <div>
+                    <h2>Ready to Take the Next Step?</h2>
+                    <p>Create your profile and start exploring career opportunities.</p>
+                </div>
+
+                <button class="primary-btn cta-button" data-page="register">
+                    Create Free Account
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-logo">AccessHire</div>
+                <p>Building an inclusive future, one opportunity at a time.</p>
+                <p class="copyright">© 2026 AccessHire. All rights reserved.</p>
+            </footer>
+
+        </section>
+
+
+        <!-- ================= ABOUT PAGE ================= -->
+
+        <section class="page-section" id="about">
+
+            <div class="page-heading">
+                <span class="section-tag">ABOUT OUR PLATFORM</span>
+                <h1>Making Employment Accessible for Everyone</h1>
+                <p>
+                    We believe every individual deserves equal access
+                    to meaningful career opportunities.
+                </p>
+            </div>
+
+            <div class="about-hero">
+                <div class="about-image">
+                    <img
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900"
+                    alt="Team collaborating in an office">
+                </div>
+
+                <div class="about-content">
+                    <span class="section-tag">OUR STORY</span>
+                    <h2>Opportunities Without Barriers</h2>
+                    <p>
+                        AccessHire is an accessible job portal designed
+                        to connect job seekers with inclusive employers.
+                        Our platform aims to make the employment journey
+                        easier through technology and thoughtful design.
+                    </p>
+                    <p>
+                        We combine accessible user experiences with
+                        smart job matching to help candidates discover
+                        opportunities that suit their skills.
+                    </p>
+
+                    <button class="primary-btn" data-page="jobs">
+                        Explore Opportunities
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon blue-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To make job opportunities accessible and inclusive for everyone.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon purple-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>A future where talent matters more than barriers.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon green-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Equality, accessibility, transparency and opportunity.</p>
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= JOBS PAGE ================= -->
+
+        <section class="page-section" id="jobs">
+
+            <div class="page-heading">
+                <span class="section-tag">FIND YOUR NEXT OPPORTUNITY</span>
+                <h1>Explore Job Opportunities</h1>
+                <p>Find the right role based on your skills and interests.</p>
+            </div>
+
+            <div class="job-filter-panel">
+
+                <div class="search-field">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="jobSearch"
+                    placeholder="Search job title or company">
+                </div>
+
+                <div class="search-field">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" id="jobLocation"
+                    placeholder="Location">
+                </div>
+
+                <select id="jobTypeFilter" aria-label="Filter by job type">
+                    <option value="">All Job Types</option>
+                    <option value="Full Time">Full Time</option>
+                    <option value="Part Time">Part Time</option>
+                    <option value="Internship">Internship</option>
+                </select>
+
+                <button class="primary-btn" id="filterJobsBtn">
+                    <i class="fa-solid fa-filter"></i> Filter
+                </button>
+
+            </div>
+
+            <div class="jobs-result-heading">
+                <h2>Latest Opportunities</h2>
+                <span id="jobCount">0 Opportunities</span>
+            </div>
+
+            <div class="job-grid" id="allJobsContainer">
+                <article class="job-card" data-title="Frontend Developer" data-location="Remote" data-type="Full Time">
+                    <div class="job-card-top">
+                        <div class="company-logo google-logo">G</div>
+                        <button class="save-job" type="button" aria-label="Save Frontend Developer at Google"><i class="fa-regular fa-bookmark"></i></button>
+                    </div>
+                    <span class="job-category">Technology</span>
+                    <h3>Frontend Developer</h3>
+                    <p class="company-name">Google</p>
+                    <div class="job-details"><span><i class="fa-solid fa-location-dot"></i> Remote</span><span><i class="fa-solid fa-clock"></i> Full Time</span></div>
+                    <div class="job-card-bottom"><strong>₹5 - 8 LPA</strong><button class="small-btn apply-job-btn" type="button">Apply Now</button></div>
+                </article>
+
+                <article class="job-card" data-title="Software Engineer" data-location="Hybrid" data-type="Full Time">
+                    <div class="job-card-top">
+                        <div class="company-logo microsoft-logo">M</div>
+                        <button class="save-job" type="button" aria-label="Save Software Engineer at Microsoft"><i class="fa-regular fa-bookmark"></i></button>
+                    </div>
+                    <span class="job-category">Software</span>
+                    <h3>Software Engineer</h3>
+                    <p class="company-name">Microsoft</p>
+                    <div class="job-details"><span><i class="fa-solid fa-location-dot"></i> Hybrid</span><span><i class="fa-solid fa-clock"></i> Full Time</span></div>
+                    <div class="job-card-bottom"><strong>₹6 - 10 LPA</strong><button class="small-btn apply-job-btn" type="button">Apply Now</button></div>
+                </article>
+
+                <article class="job-card" data-title="UI UX Designer" data-location="On-site" data-type="Full Time">
+                    <div class="job-card-top">
+                        <div class="company-logo amazon-logo">a</div>
+                        <button class="save-job" type="button" aria-label="Save UI/UX Designer at Amazon"><i class="fa-regular fa-bookmark"></i></button>
+                    </div>
+                    <span class="job-category">Design</span>
+                    <h3>UI/UX Designer</h3>
+                    <p class="company-name">Amazon</p>
+                    <div class="job-details"><span><i class="fa-solid fa-location-dot"></i> On-site</span><span><i class="fa-solid fa-clock"></i> Full Time</span></div>
+                    <div class="job-card-bottom"><strong>₹4 - 7 LPA</strong><button class="small-btn apply-job-btn" type="button">Apply Now</button></div>
+                </article>
+
+                <article class="job-card" data-title="Product Design Intern" data-location="Remote" data-type="Internship">
+                    <div class="job-card-top">
+                        <div class="company-logo">D</div>
+                        <button class="save-job" type="button" aria-label="Save Product Design Intern at DesignCo"><i class="fa-regular fa-bookmark"></i></button>
+                    </div>
+                    <span class="job-category">Design</span>
+                    <h3>Product Design Intern</h3>
+                    <p class="company-name">DesignCo</p>
+                    <div class="job-details"><span><i class="fa-solid fa-location-dot"></i> Remote</span><span><i class="fa-solid fa-clock"></i> Internship</span></div>
+                    <div class="job-card-bottom"><strong>₹20,000 / month</strong><button class="small-btn apply-job-btn" type="button">Apply Now</button></div>
+                </article>
+            </div>
+            <p class="empty-state hidden" id="noJobsMessage">No jobs match your search. Try changing your filters.</p>
+
+        </section>
+
+        <section class="page-section" id="dashboard">
+            <div class="page-heading"><span class="section-tag">YOUR ACTIVITY</span><h1>Candidate Dashboard</h1><p>Keep track of your applications and saved opportunities.</p></div>
+            <div class="dashboard-stats">
+                <article class="dashboard-stat"><span>Applications submitted</span><strong id="applicationCount">00</strong><i class="fa-solid fa-paper-plane"></i></article>
+                <article class="dashboard-stat"><span>Jobs saved</span><strong id="savedCount">00</strong><i class="fa-solid fa-bookmark"></i></article>
+            </div>
+            <div class="content-section"><div class="section-heading"><h2>Keep moving forward</h2><p>Find a role that fits your skills and goals.</p></div><button class="primary-btn" data-page="jobs">Browse jobs <i class="fa-solid fa-arrow-right"></i></button></div>
+        </section>
+
+        <section class="page-section" id="how-it-works">
+            <div class="page-heading"><span class="section-tag">A SIMPLE JOURNEY</span><h1>How AccessHire Works</h1><p>From creating a profile to finding a role where you can thrive.</p></div>
+            <div class="steps-grid">
+                <article class="step-card"><span class="step-number">01</span><i class="fa-solid fa-user-plus"></i><h3>Create your profile</h3><p>Share your experience, skills and the kind of work you are looking for.</p></article>
+                <article class="step-card"><span class="step-number">02</span><i class="fa-solid fa-magnifying-glass"></i><h3>Explore opportunities</h3><p>Search inclusive roles and filter by location or employment type.</p></article>
+                <article class="step-card"><span class="step-number">03</span><i class="fa-solid fa-paper-plane"></i><h3>Apply with confidence</h3><p>Save roles that interest you and submit applications in one place.</p></article>
+                <article class="step-card"><span class="step-number">04</span><i class="fa-solid fa-handshake"></i><h3>Meet your next team</h3><p>Connect with employers who value talent and accessible workplaces.</p></article>
+            </div>
+            <div class="content-section"><button class="primary-btn" data-page="register">Create your profile <i class="fa-solid fa-arrow-right"></i></button></div>
+        </section>
+
+        <section class="page-section" id="accessibility">
+            <div class="page-heading"><span class="section-tag">YOUR EXPERIENCE</span><h1>Accessibility Settings</h1><p>Adjust the display to make AccessHire more comfortable to use.</p></div>
+            <div class="settings-container">
+                <article class="settings-card"><div class="settings-icon"><i class="fa-solid fa-font"></i></div><div class="settings-info"><h3>Text size</h3><p>Increase or decrease the text size across the website.</p></div><div class="settings-control"><button type="button" id="fontDecrease" aria-label="Decrease text size">A−</button><button type="button" id="fontIncrease" aria-label="Increase text size">A+</button></div></article>
+                <article class="settings-card"><div class="settings-icon"><i class="fa-solid fa-moon"></i></div><div class="settings-info"><h3>Dark mode</h3><p>Use a darker color scheme.</p></div><label class="switch"><input type="checkbox" id="darkModeToggle" aria-label="Enable dark mode"><span class="slider"></span></label></article>
+                <article class="settings-card"><div class="settings-icon"><i class="fa-solid fa-circle-half-stroke"></i></div><div class="settings-info"><h3>High contrast</h3><p>Increase contrast between text and page backgrounds.</p></div><label class="switch"><input type="checkbox" id="contrastToggle" aria-label="Enable high contrast"><span class="slider"></span></label></article>
+            </div>
+        </section>
+
+        <section class="page-section" id="contact">
+            <div class="page-heading"><span class="section-tag">WE ARE HERE TO HELP</span><h1>Contact AccessHire</h1><p>Send our team a message and we will get back to you.</p></div>
+            <form class="form-card" id="contactForm">
+                <div class="form-grid"><div class="form-group"><label for="contactName">Your name</label><input id="contactName" name="name" type="text" autocomplete="name" required></div><div class="form-group"><label for="contactEmail">Email address</label><input id="contactEmail" name="email" type="email" autocomplete="email" required></div></div>
+                <div class="form-group"><label for="contactMessage">Message</label><textarea id="contactMessage" name="message" rows="5" required></textarea></div>
+                <button class="primary-btn" type="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </section>
+
+        <section class="page-section" id="register">
+            <div class="page-heading"><span class="section-tag">GET STARTED</span><h1>Create your account</h1><p>Build your profile and discover inclusive career opportunities.</p></div>
+            <form class="form-card" id="registerForm">
+                <div class="form-grid"><div class="form-group"><label for="fullName">Full name</label><input id="fullName" type="text" autocomplete="name" required></div><div class="form-group"><label for="registerEmail">Email address</label><input id="registerEmail" type="email" autocomplete="email" required></div><div class="form-group"><label for="phoneNumber">Mobile number</label><input id="phoneNumber" type="tel" inputmode="numeric" autocomplete="tel" required></div><div class="form-group"><label for="accountType">Account type</label><select id="accountType" required><option value="">Choose account type</option><option value="candidate">Candidate</option><option value="employer">Employer</option></select></div><div class="form-group"><label for="registerPassword">Password</label><div class="password-field"><input id="registerPassword" type="password" autocomplete="new-password" required><button class="password-toggle" type="button" aria-label="Show password"><i class="fa-regular fa-eye"></i></button></div></div><div class="form-group"><label for="confirmPassword">Confirm password</label><div class="password-field"><input id="confirmPassword" type="password" autocomplete="new-password" required><button class="password-toggle" type="button" aria-label="Show password"><i class="fa-regular fa-eye"></i></button></div></div></div>
+                <label class="checkbox-label"><input id="termsCheck" type="checkbox"> I agree to the terms and conditions.</label>
+                <button class="primary-btn" type="submit">Create account <i class="fa-solid fa-arrow-right"></i></button>
+                <p class="form-note">Already registered? <button class="inline-button" type="button" data-page="login">Log in</button></p>
+            </form>
+        </section>
+
+        <section class="page-section" id="login">
+            <div class="page-heading"><span class="section-tag">WELCOME BACK</span><h1>Log in to AccessHire</h1><p>Continue your career journey.</p></div>
+            <form class="form-card narrow-form" id="loginForm">
+                <div class="form-group"><label for="loginEmail">Email address</label><input id="loginEmail" type="email" autocomplete="email" required></div>
+                <div class="form-group"><label for="loginPassword">Password</label><div class="password-field"><input id="loginPassword" type="password" autocomplete="current-password" required><button class="password-toggle" type="button" aria-label="Show password"><i class="fa-regular fa-eye"></i></button></div></div>
+                <button class="primary-btn full-btn" type="submit">Log in <i class="fa-solid fa-arrow-right"></i></button>
+                <p class="form-note">New to AccessHire? <button class="inline-button" type="button" data-page="register">Create an account</button></p>
+            </form>
+        </section>
+
+        <section class="page-section" id="employer-dashboard">
+            <div class="page-heading"><span class="section-tag">EMPLOYER PANEL</span><h1>Post an opportunity</h1><p>Share an inclusive role with candidates looking for their next step.</p></div>
+            <form class="form-card" id="postJobForm">
+                <div class="form-grid"><div class="form-group"><label for="jobTitle">Job title</label><input id="jobTitle" type="text" required></div><div class="form-group"><label for="companyName">Company name</label><input id="companyName" type="text" required></div><div class="form-group"><label for="employerLocation">Location</label><input id="employerLocation" type="text" required></div><div class="form-group"><label for="employerJobType">Employment type</label><select id="employerJobType" required><option value="">Choose type</option><option>Full Time</option><option>Part Time</option><option>Internship</option></select></div><div class="form-group"><label for="salary">Salary range</label><input id="salary" type="text" placeholder="Optional"></div><div class="form-group"><label for="requiredSkills">Required skills</label><input id="requiredSkills" type="text" placeholder="Optional"></div></div>
+                <div class="form-group"><label for="jobDescription">Job description</label><textarea id="jobDescription" rows="5" required></textarea></div>
+                <button class="primary-btn" type="submit">Publish job <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </form>
+            <div class="content-section"><div class="section-heading"><h2>Your listings <span class="count-label" id="postedJobCount">00</span></h2></div><div class="employer-job-list" id="employerJobList"></div></div>
+        </section>
+
+        <footer class="footer page-footer"><div class="footer-logo">AccessHire</div><p>Building an inclusive future, one opportunity at a time.</p><p class="copyright">© 2026 AccessHire. All rights reserved.</p></footer>
+    </main>
+</div>
+
+<div class="toast-message" id="toastMessage" role="status" aria-live="polite"><i class="fa-solid fa-circle-check"></i><span id="toastText"></span></div>
+</body>
+</html>
